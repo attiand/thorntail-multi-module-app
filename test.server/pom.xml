@@ -11,18 +11,7 @@
     <artifactId>test.server</artifactId>
     <packaging>war</packaging>
 
-    <description>
-		Builds Anvandare War and Docker image
-    </description>
-
-    <properties>
-        <docker.tag>latest</docker.tag>
-    </properties>
-
-
-     <dependencies>
-
-        <!-- NYA DEPENDENCIES -->
+    <dependencies>
         <dependency>
             <groupId>test</groupId>
             <artifactId>test.app</artifactId>
@@ -45,22 +34,10 @@
                     </execution>
                 </executions>
             </plugin>
-
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.1.0</version>
                 <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                    <archive>
-                        <manifest>
-                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                        </manifest>
-                        <manifestEntries>
-                            <Build-Number>${build.number}</Build-Number>
-                            <Build-Time>${maven.build.timestamp}</Build-Time>
-                            <Implementation-SCM-Revision>${scm.revision}</Implementation-SCM-Revision>
-                        </manifestEntries>
-                    </archive>
+                <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
         </plugins>

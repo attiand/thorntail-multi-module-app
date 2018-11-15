@@ -19,11 +19,8 @@
         <module>test.app</module>        
     </modules>
 
-
     <dependencyManagement>
         <dependencies>
-            <!-- 3PP -->
-
             <dependency>
                 <groupId>io.thorntail</groupId>
                 <artifactId>bom-all</artifactId>
@@ -35,8 +32,6 @@
     </dependencyManagement>
 
     <dependencies>
-        <!-- THORNTAIL FRAGMENTS -->
-
         <dependency>
             <groupId>io.thorntail</groupId>
             <artifactId>logging</artifactId>
@@ -81,8 +76,5 @@
             <groupId>io.thorntail</groupId>
             <artifactId>management</artifactId>
         </dependency>
-
-        <!-- TEST DEPENDENCIES -->
-
     </dependencies>
 </project>

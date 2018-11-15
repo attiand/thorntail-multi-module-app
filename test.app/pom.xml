@@ -7,16 +7,6 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <artifactId>test.app</artifactId>
-
     <dependencies>
-
-        <!-- NYA DEPENDENCIES -->
-
-     
-        <!-- SERVER DEPENDENCIES -->
-
-        <!-- 3PP DEPENDENCIES -->
-
-        <!-- TEST DEPENDENCIES -->
     </dependencies>
 </project>
