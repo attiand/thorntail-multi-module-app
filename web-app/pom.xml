@@ -4,23 +4,23 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>test</groupId>
-        <artifactId>test</artifactId>
+        <artifactId>multi-module-app</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>test.server</artifactId>
+    <artifactId>web-app</artifactId>
     <packaging>war</packaging>
 
     <dependencies>
 
         <dependency>
             <groupId>test</groupId>
-            <artifactId>test.app</artifactId>
+            <artifactId>library-module</artifactId>
             <version>${project.version}</version>
         </dependency>
 
 
-       <dependency>
+        <dependency>
             <groupId>io.thorntail</groupId>
             <artifactId>logging</artifactId>
         </dependency>
@@ -85,7 +85,7 @@
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
                 <configuration>
-                <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
         </plugins>

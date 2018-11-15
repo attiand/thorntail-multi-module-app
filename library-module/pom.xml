@@ -3,10 +3,17 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>test</groupId>
-        <artifactId>test</artifactId>
+        <artifactId>multi-module-app</artifactId>
         <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
-    <artifactId>test.app</artifactId>
+    <artifactId>library-module</artifactId>
+
     <dependencies>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 </project>

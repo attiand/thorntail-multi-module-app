@@ -1,5 +1,0 @@
-package se;
-
-class Foo {
-
-}
